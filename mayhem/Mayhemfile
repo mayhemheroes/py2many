@@ -1,0 +1,9 @@
+project: py2many
+target: fuzz-py
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_py.py
+    libfuzzer: true
+    timeout: 12
